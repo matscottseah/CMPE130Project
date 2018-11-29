@@ -1,26 +1,11 @@
-#include "smurfing.h"
+#include "mainwindow.h"
+#include <QApplication>
 #include <iostream>
-#include "stdio.h"
-#include <fstream>
-#include <vector>
-using namespace std;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-int main(){
-    std::cout<<endl;
-    std::cout<<endl;
-    std::cout<<endl;
-    std::cout<<endl;
-    std::cout<<endl;
-    std::cout<<endl;
-    std::cout<<endl;
-
-    std::cout<<"*****************************************************************************************"<<endl<<endl<<endl<<endl;
-    std::cout<<"Hello World!"<<endl<<endl<<endl;
-    std::cout<<"*****************************************************************************************"<<endl<<endl<<endl<<endl;
-    std::string hello;
-    std::cin>>hello;
-    std::cout<<hello;
-
-
-    return 0;
+    return a.exec();
 }
